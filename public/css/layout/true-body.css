@@ -1,0 +1,16 @@
+/* Desktop/Tablet */
+@media (min-width: 601px) {
+    .true-body {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .true-body {
+        width: 100vw;
+    }
+}

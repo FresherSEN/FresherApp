@@ -1,0 +1,24 @@
+/* Desktop/Tablet */
+@media (min-width: 601px) {
+    .feed-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 95%;
+        gap: 10px;
+        max-width: 1500px;
+        padding: 0px 10px;
+        }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .feed-container {
+        display: flex;
+        padding: 0px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+    }
+}

@@ -1,0 +1,149 @@
+/*MARK: Image*/
+.image_upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: -48px;
+    margin-bottom: 20px;
+}
+.image_upload:hover > .image_upload-image { 
+    outline: 1px solid #016201;
+}
+.image_upload-image {
+    width: 185.882px;
+    height: 185.882px;
+    border-radius: 185.882px;
+    object-fit: cover;
+    margin-bottom: -48px;
+}
+
+/*MARK: Textbox*/
+/*Label above control*/
+.control-label { 
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+/*Textbox*/
+.textbox {
+    outline: solid 2px #FFF;
+    border: none;
+    display: flex;
+    width: 218px;
+    max-width: 218px;
+    padding: 10px 16px 10px 14px;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    border-bottom: 2px solid #D9D9D9;
+    background: #F5F5F5;
+
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all 0.1s;
+}
+.textbox:hover {
+    background: #01620120;
+    border-bottom: 2px solid #016201;
+    transition: all 0.1s;
+}
+.textbox:focus {
+    background: #01620130;
+    outline: solid 2px #016201;
+    border: none;
+    border-bottom: 2px solid #016201;
+    transition: all 0.1s;
+}
+
+/* Wraps the control and label for proper spacing */
+.basic-control-wrapper {
+    margin: 0px;
+    height:fit-content;
+    padding-bottom: 10px;
+}
+
+/*MARK: Submit*/
+.submit-button {
+    background: url(../../icons/buttons/save.svg) no-repeat scroll 15px 10px;
+
+    
+    text-decoration: none;
+    display: flex;
+    padding: 10px 20px 10px 47px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    border: 1px solid #FFF;
+    background-color: #016201;
+    width: fit-content;
+    transition: all 0.1s;
+
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin: 0px;
+}
+.submit-button:hover {
+    background-color:#002500;
+    outline: solid 1px #016201; /*'Panwp' (2015) When 1 px border is added to div, Div size increases, Don't want to do that, Accessed 31 Dec 2024 https://stackoverflow.com/questions/3254587/when-1-px-border-is-added-to-div-div-size-increases-dont-want-to-do-that*/
+    transition: all 0.3s;
+}
+
+/*MARK:Dropdown*/
+.dropdown {
+    width: 248px;
+    border: none;
+
+    /* this is for the text inside */
+    /* for compatibility, display:-webkit-box is before display:flex*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    flex: 1 0 0;
+
+    display: flex;
+    padding: 10px 16px 10px 14px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+    background: #F5F5F5;
+    outline: solid 2px #FFF;
+
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.dropdown:hover {
+    background: #01620120;
+    transition: all 0.1s;
+}
+.dropdown:focus {
+    background: #01620130;
+    outline: solid 2px #016201;
+    border: none;   
+    transition: all 0.3s;
+}

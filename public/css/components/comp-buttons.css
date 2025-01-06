@@ -1,0 +1,128 @@
+.button-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/*MARK:Filled*/
+.button-filled {
+    text-decoration: none;
+    display: flex;
+    padding: 10px 20px 10px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    border: 1px solid #FFF;
+    background: #016201;
+    width: fit-content;
+    transition: all 0.1s;
+}
+.button-filled-text {
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin: 0px;
+}
+.button-filled:hover {
+    background-color:#002500;
+    outline: solid 1px #016201; /*'Panwp' (2015) When 1 px border is added to div, Div size increases, Don't want to do that, Accessed 31 Dec 2024 https://stackoverflow.com/questions/3254587/when-1-px-border-is-added-to-div-div-size-increases-dont-want-to-do-that*/
+    transition: all 0.3s;
+}
+
+
+/*MARK:Tonal*/
+.button-tonal {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    background: #0162011a;
+    width: fit-content;
+    text-decoration: none;
+}
+.button-tonal-text {
+    color: #016201;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+.button-tonal:hover {
+    background-color:#01620140;
+    outline: solid 1px #016201; /*'Panwp' (2015) When 1 px border is added to div, Div size increases, Don't want to do that, Accessed 31 Dec 2024 https://stackoverflow.com/questions/3254587/when-1-px-border-is-added-to-div-div-size-increases-dont-want-to-do-that*/
+    transition: all 0.3s;
+}
+
+/*MARK:Outlined*/
+.button-outlined {
+    display: flex;
+    padding: 6px 20px 6px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    border: 1px solid #016201;
+    background: #FFF;
+    width: fit-content;
+    transition: all 0.1s;
+}
+.button-outlined-text {
+    color: #016201;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+.button-outlined:hover {
+    background-color:#01620130;
+    transition: all 0.3s;
+}
+
+/*MARK:Caution*/
+.button-caution {
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 51px;
+    border: 1px solid #A80000;
+    background: rgba(255, 0, 0, 0.05);
+    width: fit-content;
+    text-decoration: none;
+}
+.button-caution-text {
+    color: #A80000;
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin: 0px;
+}
+.button-caution:hover {
+    background: rgba(255, 0, 0, 0.10);
+    outline: 0.7px solid #A80000;
+    transition: all 0.1s;
+}
+
+/*MARK: Containers*/
+.horizontal-button-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 6px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+

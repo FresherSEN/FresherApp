@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Fresher</title>
+
+    <!-- MARK: Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    
+    <!--MARK: CSS -->
+    <!-- layout -->
+    <link rel="stylesheet" href="css/layout/landing.css">
+
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/comp-buttons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="module" src="./scripts/login.js"></script>
+    
+
+</head>
+<body class="landing-body">
+    <div class="text-container">
+        <!-- Fresher logo -->
+        <img src="icons/other/logo-large.svg" alt="Fresher logo">
+        
+        <!-- Hero description -->
+        <p class="body-text">Every feed. One place.</p>
+    </div>
+
+    <!-- Sign in with Google button -->
+    <div id="login-screen">
+        <button class="button-filled" id="login-button" type="button">
+            <img src="../icons/buttons/Google icon.svg" class="button-icon">
+            <p class="button-filled-text">Sign in with Google</p>
+        </button>
+    </div>
+
+    <div id="profile-screen" style="display: none;">
+        <p id="temp-login-status">No user logged in right now</p>
+        <button id="logout-button">Logout</button>
+    </div>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+.test-1 {
+    background-color: aqua;
+}
+.test-2 {
+    background-color: aquamarine;
+}
+.test-feed-container {
+    display: flex;
+    padding: 0px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+/* Desktop/Tablet */
+@media (min-width: 601px) {
+
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+}
