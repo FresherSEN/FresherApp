@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>Fresher</title>
-    <link rel="icon" type="image/x-icon" href="../icons/other/fresherfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="public/icons/other/fresherfavicon.ico">
 
     <!-- MARK: Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,24 +13,24 @@
     
     <!--MARK: CSS -->
     <!-- layout -->
-    <link rel="stylesheet" href="../css/layout/main-body.css">
-    <link rel="stylesheet" href="../css/layout/true-body.css">
-    <link rel="stylesheet" href="../css/layout/settings-main.css">
-    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="public/css/layout/main-body.css">
+    <link rel="stylesheet" href="public/css/layout/true-body.css">
+    <link rel="stylesheet" href="public/css/layout/settings-main.css">
+    <link rel="stylesheet" href="public/css/test.css">
 
     <!-- components -->
-    <link rel="stylesheet" href="../css/components/comp-navbar.css">
-    <link rel="stylesheet" href="../css/components/comp-header.css">
-    <link rel="stylesheet" href="../css/components/comp-buttons.css">
-    <link rel="stylesheet" href="../css/components/comp-titlebar.css">
-    <link rel="stylesheet" href="../css/components/comp-cards.css">
-    <link rel="stylesheet" href="../css/components/comp-batteredheader.css">
-    <link rel="stylesheet" href="../css/components/comp-controls.css">
+    <link rel="stylesheet" href="public/css/components/comp-navbar.css">
+    <link rel="stylesheet" href="public/css/components/comp-header.css">
+    <link rel="stylesheet" href="public/css/components/comp-buttons.css">
+    <link rel="stylesheet" href="public/css/components/comp-titlebar.css">
+    <link rel="stylesheet" href="public/css/components/comp-cards.css">
+    <link rel="stylesheet" href="public/css/components/comp-batteredheader.css">
+    <link rel="stylesheet" href="public/css/components/comp-controls.css">
 
     <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
-    <script  src="../scripts/loginCheck.js" type="module" defer></script>
+    <script  src="public/scripts/loginCheck.js" type="module" defer></script>
     
-    <script src="../scripts/account-settings.js"></script>
+    <script src="public/scripts/account-settings.js"></script>
     <script>fetchAccountSettings()</script>
     
 </head>
@@ -38,27 +38,27 @@
     <!-- Navbar -->
     <nav class="comp-navbar"> 
         <!-- Home -->
-        <a class="comp-navbar-icon-default" href="../html/feed.html">
-            <img src="../icons/navbar/home.svg" class="comp-navbar-svg" alt="Home icon">
+        <a class="comp-navbar-icon-default" href="public/html/feed.html">
+            <img src="public/icons/navbar/home.svg" class="comp-navbar-svg" alt="Home icon">
         </a>
         <!-- RSS -->
-        <a class="comp-navbar-icon-default" href="../html/settings-rss.html">
-            <img src="../icons/navbar/rss.svg" class="comp-navbar-svg" alt="RSS settings icon">
+        <a class="comp-navbar-icon-default" href="public/html/settings-rss.html">
+            <img src="public/icons/navbar/rss.svg" class="comp-navbar-svg" alt="RSS settings icon">
         </a>
         <!-- Settings -->
-        <a class="comp-navbar-icon-default" href="../html/settings-home.html">
-            <img src="../icons/navbar/settings.svg" class="comp-navbar-svg" alt="General settings icon">
+        <a class="comp-navbar-icon-default" href="public/html/settings-home.html">
+            <img src="public/icons/navbar/settings.svg" class="comp-navbar-svg" alt="General settings icon">
         </a>
         <!-- Account -->
-        <a class="comp-navbar-icon-default" href="../html/settings-account.html">
-            <img src="../images/placeholder.png" class="comp-navbar-svg" alt="Account profile picture">
+        <a class="comp-navbar-icon-default" href="public/html/settings-account.html">
+            <img src="public/images/placeholder.png" class="comp-navbar-svg" alt="Account profile picture">
         </a>
     </nav>
 
     <div class="true-body">
         <!-- Titlebar with "Fresher" -->
         <header class="titlebar-container">
-            <img src="../icons/other/logo.svg" alt="Fresher Logo">
+            <img src="public/icons/other/logo.svg" alt="Fresher Logo">
         </header>
 
         <!-- Container that holds the settings, also acts as a form -->
@@ -67,10 +67,10 @@
             <!-- Header section -->
             <div class="header-with-breadcrumb">
                 <div class="breadcrumb-container">
-                    <a href="../html/settings-home.html" class="breadcrumb-container-text">Settings</a>
+                    <a href="public/html/settings-home.html" class="breadcrumb-container-text">Settings</a>
                 </div>
                 <div class="header-container">
-                    <img src="../icons/batteredheader/address.svg" alt="A non-functional arrow pointing towards the page heading.">
+                    <img src="public/icons/batteredheader/address.svg" alt="A non-functional arrow pointing towards the page heading.">
                     <p class="header-container-text">Account</p>
                 </div>
             </div>
@@ -80,8 +80,8 @@
                 <label class="control-label" for="acc-image" >Account picture</label>
                 <label for="image" class="image_upload" style="margin-top: 10px;">
                     <input type="file" accept="image/*" name="account_image" id="acc-image" style="display: none;">
-                    <img class="image_upload-image" src="../images/placeholder.png" alt="Your profile picture">
-                    <img src="../icons/settings/Edit.svg" alt="Edit profile picture"> 
+                    <img class="image_upload-image" src="public/images/placeholder.png" alt="Your profile picture">
+                    <img src="public/icons/settings/Edit.svg" alt="Edit profile picture"> 
                     <!-- Kociaj, P (2016) How can I upload a new file on click of image button, Accessed 1 Jan 2025-->
                 </label>
             </div>
@@ -96,7 +96,7 @@
             <div class="basic-control-wrapper" style="display:flex; flex-direction: column; gap:10px">
                 <label class="control-label">More options</label>
                 <a class="button-caution" href="https://google.com">
-                    <img src="../icons/buttons/bin.svg" class="button-icon">
+                    <img src="public/icons/buttons/bin.svg" class="button-icon">
                     <p class="button-caution-text">Reset account</p>
                 </a>
             </div>
@@ -108,7 +108,7 @@
 
                 <!-- Cancel button -->
                 <a class="button-tonal" href="javascript:window.history.back();"> <!-- Cantarella, A (2019) Pure HTML Back Button, Accessed Jan 2 2025 https://stackoverflow.com/questions/57361403/pure-html-back-button -->
-                    <img src="../icons/buttons/cancel.svg" class="button-icon">
+                    <img src="public/icons/buttons/cancel.svg" class="button-icon">
                     <p class="button-tonal-text">Cancel</p>
                 </a>
             </div>

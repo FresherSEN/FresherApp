@@ -17,7 +17,7 @@ app.listen(8000, () => console.log("Server is running on Port 8000, visit http:/
 
 // I use inline functions here
 // Connect to database 
-const db = new sqlite3.Database('./.database/datasource.db', sqlite3.OPEN_READWRITE,(err) => {
+const db = new sqlite3.Database('public/.database/datasource.db', sqlite3.OPEN_READWRITE,(err) => {
   if (err) return console.error(err.message); // If connection unsuccessful, then return error message
 
     console.log('Successful connection');

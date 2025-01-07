@@ -1,10 +1,10 @@
-import { account } from './appwrite.js';
+import { account } from 'public/appwrite.js';
 
 async function checkIfLoggedIn() {
     try {
         const user = await account.get();
     } catch (error) {
-        window.location.href = "../";
+        window.location.href = "public/";
     }
 }
 checkIfLoggedIn();
