@@ -14,8 +14,8 @@ async function handleLogin() {
     console.log("helo");
     account.createOAuth2Session(
         Appwrite.OAuthProvider.Google,
-        'http://localhost:8000/',
-        'http://localhost:8000/fail'
+        'http://freshersen.github.io/FresherApp/',
+        'https://freshersen.github.io/FresherApp/'
     );
 }
 
