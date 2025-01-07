@@ -77,7 +77,7 @@
 
 /*MARK: Submit*/
 .submit-button {
-    background: url(public/public/icons/buttons/save.svg) no-repeat scroll 15px 10px;
+    background: url(../../icons/buttons/save.svg) no-repeat scroll 15px 10px;
 
     
     text-decoration: none;

@@ -24,7 +24,7 @@
     color: #016201;
 }
 .broken .feed-outline-info-content-titlecontainer-text {
-    background: url(public/public/icons/rss/warning.svg) no-repeat scroll 0px 5px;
+    background: url(../../icons/rss/warning.svg) no-repeat scroll 0px 5px;
     padding-left: 30px;
     color: #A80000;
 }
@@ -32,7 +32,7 @@
     color: #AD5400;
 }
 .requiresrefresh .feed-outline-info-content-titlecontainer-text {
-    background: url(public/public/icons/rss/question.svg) no-repeat scroll 0px 5px;
+    background: url(../../icons/rss/question.svg) no-repeat scroll 0px 5px;
     padding-left: 30px;
     color: #AD5400;
 }

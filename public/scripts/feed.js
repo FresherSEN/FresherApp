@@ -1,4 +1,3 @@
-
 // Changes the height of images based on the text available on mobile devices.
 function makeArticleImageHeightResponsive() {
     if (document.documentElement.clientWidth < 600) { // When the width of the screen is less than 600 (mobile)...
@@ -35,4 +34,3 @@ function testFetch() {
         console.error('Error fetching data:', error);
     });
 }
-

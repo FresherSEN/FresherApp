@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <title>Fresher</title>
-    <link rel="icon" type="image/x-icon" href="public/icons/other/fresherfavicon.ico">
-
-    <script  src="public/scripts/loginCheck.js" type="module" defer></script>
 
     <!-- MARK: Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,59 +12,61 @@
     
     <!--MARK: CSS -->
     <!-- layout -->
-    <link rel="stylesheet" href="public/css/layout/main-body.css">
-    <link rel="stylesheet" href="public/css/layout/feed-container.css">
-    <link rel="stylesheet" href="public/css/layout/true-body.css">
-    <link rel="stylesheet" href="public/css/test.css">
+    <link rel="stylesheet" href="../css/layout/main-body.css">
+    <link rel="stylesheet" href="../css/layout/feed-container.css">
+    <link rel="stylesheet" href="../css/layout/true-body.css">
+    <link rel="stylesheet" href="../css/test.css">
 
     <!-- components -->
-    <link rel="stylesheet" href="public/css/components/comp-navbar.css">
-    <link rel="stylesheet" href="public/css/components/comp-header.css">
-    <link rel="stylesheet" href="public/css/components/comp-buttons.css">
-    <link rel="stylesheet" href="public/css/components/comp-titlebar.css">
-    <link rel="stylesheet" href="public/css/components/comp-cards.css">
+    <link rel="stylesheet" href="../css/components/comp-navbar.css">
+    <link rel="stylesheet" href="../css/components/comp-header.css">
+    <link rel="stylesheet" href="../css/components/comp-buttons.css">
+    <link rel="stylesheet" href="../css/components/comp-titlebar.css">
+    <link rel="stylesheet" href="../css/components/comp-cards.css">
 
     <!-- Client side scripts (JS) -->
+    <script src="../scripts/feed.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    
-    <script  src="public/scripts/feed.js"></script>
 </head>
 <body class="main-body">
     <!-- Navbar -->
     <nav class="comp-navbar"> 
         <!-- Home -->
-        <a class="comp-navbar-icon-default" href="public/html/feed.html">
-            <img src="public/icons/navbar/home.svg" class="comp-navbar-svg" alt="Home icon">
+        <a class="comp-navbar-icon-default" href="../html/feed.html">
+            <img src="../icons/navbar/home.svg" class="comp-navbar-svg" alt="Home icon">
         </a>
         <!-- RSS -->
-        <a class="comp-navbar-icon-default" href="public/html/settings-rss.html">
-            <img src="public/icons/navbar/rss.svg" class="comp-navbar-svg" alt="RSS settings icon">
+        <a class="comp-navbar-icon-default" href="../html/settings-rss.html">
+            <img src="../icons/navbar/rss.svg" class="comp-navbar-svg" alt="RSS settings icon">
         </a>
         <!-- Settings -->
-        <a class="comp-navbar-icon-default" href="public/html/settings-home.html">
-            <img src="public/icons/navbar/settings.svg" class="comp-navbar-svg" alt="General settings icon">
+        <a class="comp-navbar-icon-default" href="../html/settings-home.html">
+            <img src="../icons/navbar/settings.svg" class="comp-navbar-svg" alt="General settings icon">
         </a>
         <!-- Account -->
-        <a class="comp-navbar-icon-default" href="public/html/settings-account.html">
-            <img src="public/images/placeholder.png" class="comp-navbar-svg" alt="Account profile picture">
+        <a class="comp-navbar-icon-default" href="../html/settings-account.html">
+            <img src="../images/placeholder.png" class="comp-navbar-svg" alt="Account profile picture">
+        </a>
+        <!-- Log out temp -->
+        <a class="comp-navbar-icon-default" href="">
+            <img src="../icons/rss/delete rss.svg" class="comp-navbar-svg" alt="Account profile picture">
         </a>
     </nav>
 
     <div class="true-body">
         <!-- Titlebar with "Fresher" -->
         <header class="titlebar-container">
-            <img src="public/icons/other/logo.svg" alt="Fresher Logo">
+            <img src="../icons/other/logo.svg" alt="Fresher Logo">
         </header>
 
         <!-- Contains the feed -->
         <section class="feed-container">
             <!-- Contains the title of the feed -->
             <div class="comp-header">
+                <script>testFetch()</script>
                 <p class="comp-header-text" id="test-feed-title">Feed title</p>  <!-- Title of the feed -->
                 <div class="button-outlined">               <!-- Button which says "See more of this feed" -->
-                    <img src="public/icons/buttons/forward.svg" class="button-icon" alt="Forward icon">
+                    <img src="../icons/buttons/forward.svg" class="button-icon" alt="Forward icon">
                     <p class="button-outlined-text">See more of this feed</p>
                 </div>
             </div>
@@ -76,7 +75,7 @@
             <a class="card" href="https://google.com">
                 <div class="card-content">
                     <!-- Article image -->
-                    <img src="public/images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
+                    <img src="../images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
                     <!-- Article title -->
                     <p class="card-content-title">Article title</p>
                 </div>
@@ -88,7 +87,7 @@
             <a class="card" href="https://google.com">
                 <div class="card-content">
                     <!-- Article image -->
-                    <img src="public/images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
+                    <img src="../images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
                     <!-- Article title -->
                     <p class="card-content-title">Article title</p>
                 </div>
@@ -100,7 +99,7 @@
             <a class="card" href="https://google.com">
                 <div class="card-content">
                     <!-- Article image -->
-                    <img src="public/images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
+                    <img src="../images/placeholder.png" class="card-content-image" alt="A placeholder image for this article">
                     <!-- Article title -->
                     <p class="card-content-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro ipsam tempora facilis libero enim ratione, placeat quisquam commodi atque aliquid autem sequi minus dignissimos. Dolorum explicabo sed corporis quasi!</p>
                 </div>
@@ -111,7 +110,6 @@
     </div>
     
     <script> makeArticleImageHeightResponsive(); </script>
-
 
     
 
